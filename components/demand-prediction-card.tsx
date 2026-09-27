@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import { Slider } from "@/components/ui/slider";
+import { Slider } from "@/components/slider";
 import { useFoodyStore } from "@/lib/store";
 
 const baseline = [40, 46, 42, 50, 55, 48, 60];

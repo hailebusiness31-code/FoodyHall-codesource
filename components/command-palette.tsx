@@ -9,7 +9,7 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/components/ui/command";
+} from "@/components/command";
 import { useFoodyStore } from "@/lib/store";
 
 export function CommandPalette() {

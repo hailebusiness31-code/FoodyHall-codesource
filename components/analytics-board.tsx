@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { LineChart, BarChart } from "@tremor/react";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/tabs";
 import { forecastRanges, roiData } from "@/lib/mock-data";
 
 type RangeKey = keyof typeof forecastRanges;

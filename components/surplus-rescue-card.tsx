@@ -1,6 +1,6 @@
 "use client";
 
-import { Slider } from "@/components/ui/slider";
+import { Slider } from "@/components/slider";
 import { useFoodyStore } from "@/lib/store";
 
 const dishes = [

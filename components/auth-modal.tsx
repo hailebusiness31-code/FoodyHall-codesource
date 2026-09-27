@@ -8,9 +8,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogDescription,
-} from "@/components/ui/dialog";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
+} from "@/components/dialog";
+import { Tabs, TabsList, TabsTrigger } from "@/components/tabs";
+import { Button } from "@/components/button";
 import { useFoodyStore } from "@/lib/store";
 
 export function AuthModal({

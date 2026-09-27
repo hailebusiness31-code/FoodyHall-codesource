@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { Progress } from "@/components/ui/progress";
+import { Progress } from "@/components/progress";
 import { useFoodyStore } from "@/lib/store";
 
 export function SupplyMonitorCard() {

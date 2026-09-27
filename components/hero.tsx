@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { LiveCounter } from "@/components/landing/live-counter";
-import { AuthModal } from "@/components/landing/auth-modal";
+import { Button } from "@/components/button";
+import { LiveCounter } from "@/components/live-counter";
+import { AuthModal } from "@/components/auth-modal";
 import { useFoodyStore } from "@/lib/store";
 
 const features = [
