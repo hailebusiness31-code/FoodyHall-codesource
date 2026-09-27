@@ -19,9 +19,12 @@ export function Hero() {
   const isAuthed = useFoodyStore((s) => s.isAuthed);
   const router = useRouter();
 
-  useEffect(() => {
-    if (isAuthed) router.replace("/dashboard");
-  }, [isAuthed, router]);
+ useEffect(() => {
+    if (isAuthed) {
+      // Thay vì chuyển sang trang ảo gây lỗi 404, hệ thống sẽ tự động cuộn mượt mà xuống bảng điều khiển
+      document.getElementById("dashboard")?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [isAuthed]);
 
   return (
     <div className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-24 text-center">
@@ -36,7 +39,7 @@ export function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         className="relative z-10 max-w-2xl"
-      >
+       >
         <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-border bg-muted/40 px-3.5 py-1.5 text-sm text-muted-foreground">
           <span className="h-1.5 w-1.5 rounded-full bg-success shadow-[0_0_8px_theme(colors.success)]" />
           <LiveCounter /> restaurants syncing live
